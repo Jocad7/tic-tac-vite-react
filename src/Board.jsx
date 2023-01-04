@@ -38,7 +38,7 @@ function Board({ xIsNext, squares, onPlay, history }) {
   return(
     <>
       <Title>
-        {squareLeftValidation ? 'Draw 🎭' : status}
+        {(squareLeftValidation && !winner) ? 'Draw 🎭' : status}
       </Title>
       <Container>
         <Square
