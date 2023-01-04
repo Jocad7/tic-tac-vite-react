@@ -4,18 +4,14 @@
 .game {
     display: flex;
     align-items: center;
-
+    font-size: 12px;
 }
 
-.game-info, p {
-    font-size: 5px;
-}
 .game-info p {
     display: flex;
     align-items: center;
-    height: 13.6px;
     margin: 0;
-    padding: 3px;
+    padding: 6px;
     border-radius: 20px;
     text-align: center;
     background-color: rgba(128, 128, 128, 0.3);
@@ -23,16 +19,17 @@
 }
 .game-info ol {
     list-style-type: '🎯';
-    margin: 0;
+    margin-left: 20px;
     padding-inline-start: 20px;
 }
 .game-info li{
-    height: 16px;
+    
+    margin-top: 10px;
 }
 .game-info button {
     border-radius: 20px;
     border: 1px solid transparent;
     margin: 0;
-    padding: 3px;
+    padding: 10px;
     
 }

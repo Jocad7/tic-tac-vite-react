@@ -7,7 +7,7 @@ const Container = styled.div`
 display: flex;
 `;
 const Title = styled.h1`
-  font-size: 10px;
+  font-size: 20px;
 `;
 
 function Board({ xIsNext, squares, onPlay, history }) {
@@ -24,7 +24,7 @@ function Board({ xIsNext, squares, onPlay, history }) {
   const winner = calculateWinner(squares);
   // console.log(winner)
   let status = winner 
-  ? `Winner is: ${winner}`
+  ? `Winner is: ${winner} 🏆`
   : `Next player is: ${xIsNext ? 'X' : 'O'}`;
   
   return(
@@ -64,7 +64,7 @@ function calculateWinner(squares){
   
   for (let i = 0; i < lines.length; i++) {
     const [a, b, c] = lines[i];
-    if (squares[a] === squares[b] && squares[a] === squares[c]) {
+    if (squares[a] && squares[a] === squares[b] && squares[a] === squares[c]) {
       return squares[a];
     }
   }

@@ -1,5 +1,4 @@
 import React from "react";
-import { useState } from "react";
 import styled from "styled-components";
 
 const Button = ({ className, onClick, children})=>(
@@ -14,7 +13,7 @@ const ButtonStyled = styled(Button)`
     width: 100px;
     height: 100px;
     padding: 0;
-    font-size: 35px;
+    font-size: 60px;
     font-weight: bold;
 `;
 
