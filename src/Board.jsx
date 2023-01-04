@@ -20,16 +20,18 @@ function Board({ xIsNext, squares, onPlay, history }) {
     nextSquares[i]= xIsNext ? 'x' : 'o';
     onPlay(nextSquares);
   }
-
+  const squareLeftValidation = history[history.length - 1].every(item => item !== null)
   const winner = calculateWinner(squares);
-  // console.log(winner)
+    
   let status = winner 
   ? `Winner is: ${winner} 🏆`
   : `Next player is: ${xIsNext ? 'X' : 'O'}`;
   
   return(
     <>
-      <Title>{status}</Title>
+      <Title>
+        {squareLeftValidation ? 'Draw 🎭' : status}
+        </Title>
       <Container>
         <Square value={squares[0]} onSquareClick={()=> handleClick(0)}/>
         <Square value={squares[1]} onSquareClick={()=> handleClick(1)}/>

@@ -50,6 +50,7 @@ const Game = ()=>{
                 xIsNext={xIsNext} 
                 squares={currentSquares} 
                 onPlay={handlePlay}
+                history={history}
                 />
             </div>
             <div className="game-info">
