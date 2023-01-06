@@ -44,13 +44,13 @@ function Square({ value, onSquareClick, bgState, index}){
     
     return(
         <>
-            <ButtonStyled 
-            className="square"
-             bg={validation} 
-             anim={animation}
-             onClick={onSquareClick}>
-                {value}
-            </ButtonStyled>
+        <ButtonStyled 
+        className="square"
+        bg={validation} 
+        anim={animation}
+        onClick={onSquareClick}>
+            {value}
+        </ButtonStyled>
         </>
     )
 }
